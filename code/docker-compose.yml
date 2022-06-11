@@ -5,7 +5,7 @@ services:
     build: .
     container_name: clean-arch-node-api
     image: clean-arch-node-api
-    command: .docker/entrypoint.sh
+    command: code/.docker/entrypoint.sh
     volumes:
       - ../:/home/node/app
     ports:
