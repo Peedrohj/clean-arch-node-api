@@ -1,7 +1,12 @@
+import { SavePurchases } from "@/domain/usecases/save-purchases"
+
 export interface CacheStore {
     deleteCallsCount: number
     insertCallsCount: number
-    key: string
+    deleteKey: string
+    insertKey: string
+    insertValues: Array<SavePurchases.Params>
 
-    delete(key: string): void
+    delete(deleteKey: string): void
+    insert(insertKey: string, value: any): void
 }
