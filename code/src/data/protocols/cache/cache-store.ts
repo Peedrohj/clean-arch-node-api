@@ -1,4 +1,4 @@
-import { SavePurchases } from "@/domain/usecases/save-purchases"
+import { SavePurchases } from "@/domain/usecases"
 
 export interface CacheStore {
     deleteCallsCount: number
